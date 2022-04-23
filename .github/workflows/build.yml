@@ -79,8 +79,8 @@ jobs:
           cmake -Bbuild-x86 -A "Win32" -DCMAKE_VERBOSE_MAKEFILE="ON" -DBUILD_STATIC_LIB=True -DBUILD_SHARED_LIB=True -DBUILD_EXAMPLES=False -DBUILD_HOST_SELFTEST=False -DALLOW_INSTALL_TARGET=False
           cmake -Bbuild-x64 -A "x64" -DCMAKE_VERBOSE_MAKEFILE="ON" -DBUILD_STATIC_LIB=True -DBUILD_SHARED_LIB=True -DBUILD_EXAMPLES=False -DBUILD_HOST_SELFTEST=False -DALLOW_INSTALL_TARGET=False
 
-          cmake --build build-x86
-          cmake --build build-x64
+          cmake --build build-x86 --config Release
+          cmake --build build-x64 --config Release
 
           mkdir dist-windows
           mkdir dist-windows/x86
