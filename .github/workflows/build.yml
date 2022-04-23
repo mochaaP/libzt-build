@@ -122,6 +122,7 @@ jobs:
       
       - name: Organize output
         run: |
+          ls -Rlah
           mkdir publish
           mkdir publish/linux
           mkdir publish/darwin
