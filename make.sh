@@ -3,7 +3,7 @@
 
 if [ "$TARGETOS" = "linux" ]; then
   EXTRA_CMAKE_OPTIONS=""
-  EXTRA_CMAKE_CFLAGS="-Wno-everything -w"
+  EXTRA_CMAKE_CFLAGS="-Wno-everything -w -std=c++11"
   EXTRA_ZT_FLAGS="-static-libgcc -static-libstdc++ -static"
 
   if [ "$TARGETARCH" = "x86_64" ]; then
