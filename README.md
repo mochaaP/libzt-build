@@ -45,5 +45,5 @@ If you are looking for that golang wrapper, check <https://github.com/mchaNetwor
 
   * `amd64`
   * `i686`
-  * `arm`
+  * ~~`arm`~~
   * ~~`arm64`~~
