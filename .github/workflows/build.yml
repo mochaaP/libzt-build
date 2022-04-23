@@ -111,7 +111,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-linux
-          name: dist-linux
+          path: dist-linux
       - name: Download artifacts (Darwin)
         uses: actions/download-artifact@v3
         with:
