@@ -111,14 +111,17 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-linux
+          name: dist-linux
       - name: Download artifacts (Darwin)
         uses: actions/download-artifact@v3
         with:
           name: dist-darwin
+          path: dist-darwin
       - name: Download artifacts (Windows)
         uses: actions/download-artifact@v3
         with:
           name: dist-windows
+          path: dist-windows
       
       - name: Organize output
         run: |
